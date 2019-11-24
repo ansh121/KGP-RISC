@@ -1,0 +1,18 @@
+`timescale 1ns / 1ps
+
+//////////////////////////////////////////////////////////////////////////////////
+// Name - Anshul Choudhary / Ayush Kumar
+// Roll No. - 17CS10005 / 17CS10007
+// Grp. No. - 47
+//////////////////////////////////////////////////////////////////////////////////
+
+module MUX_2x1(
+    input [31:0] in1,
+    input [31:0] w1,
+    input s,
+    output [31:0] out
+    );
+	 
+	 assign out=s?w1:in1;
+
+endmodule

@@ -1,0 +1,17 @@
+`timescale 1ns / 1ps
+
+//////////////////////////////////////////////////////////////////////////////////
+// Name - Anshul Choudhary / Ayush Kumar
+// Roll No. - 17CS10005 / 17CS10007
+// Grp. No. - 47
+//////////////////////////////////////////////////////////////////////////////////
+
+module twos_complement_64(
+    input [63:0] inp1,
+    output [63:0] out
+    );
+		
+	 wire c;	 
+	 assign out = ~inp1 + 64'd1;
+
+endmodule

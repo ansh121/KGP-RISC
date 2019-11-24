@@ -1,0 +1,773 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Reading design: KGP_RISC.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "KGP_RISC.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "KGP_RISC"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : KGP_RISC
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\MUX_2x1.v" into library work
+Parsing module <MUX_2x1>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\hybrid_adder.v" into library work
+Parsing module <hybrid_adder>.
+Parsing module <four_bit_CLA_adder>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\twos_complement_64.v" into library work
+Parsing module <twos_complement_64>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\twos_complement.v" into library work
+Parsing module <twos_complement>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\Combinational_32x32_Multiplier.v" into library work
+Parsing module <Combinational_32x32_Multiplier>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\blk_mem_gen_v7_3.v" into library work
+Parsing module <blk_mem_gen_v7_3>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\Barrel_Shifter.v" into library work
+Parsing module <Barrel_Shifter>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\Arithmetic_Barrel_Right_Shifter.v" into library work
+Parsing module <Arithmetic_Barrel_Right_Shifter>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\writeAddress.v" into library work
+Parsing module <writeAddress>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\regBank.v" into library work
+Parsing module <regBank>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\InstrFetch.v" into library work
+Parsing module <InstrFetch>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\InstDecode.v" into library work
+Parsing module <InstDecode>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\branch.v" into library work
+Parsing module <branch>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\blk_mem_gen_v7_3b.v" into library work
+Parsing module <blk_mem_gen_v7_3b>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\assignInputs.v" into library work
+Parsing module <assignInputs>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\KGP_RISC.v" into library work
+Parsing module <KGP_RISC>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <KGP_RISC>.
+WARNING:HDLCompiler:1127 - "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\KGP_RISC.v" Line 58: Assignment to instr ignored, since the identifier is never used
+
+Elaborating module <InstrFetch>.
+
+Elaborating module <blk_mem_gen_v7_3>.
+WARNING:HDLCompiler:1499 - "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\blk_mem_gen_v7_3.v" Line 46: Empty module <blk_mem_gen_v7_3> remains a black box.
+
+Elaborating module <InstDecode>.
+
+Elaborating module <writeAddress>.
+
+Elaborating module <regBank>.
+
+Elaborating module <assignInputs>.
+
+Elaborating module <ALU>.
+
+Elaborating module <twos_complement>.
+
+Elaborating module <hybrid_adder>.
+
+Elaborating module <four_bit_CLA_adder>.
+WARNING:HDLCompiler:1127 - "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\twos_complement.v" Line 15: Assignment to c ignored, since the identifier is never used
+
+Elaborating module <Barrel_Shifter>.
+
+Elaborating module <MUX_2x1>.
+
+Elaborating module <Arithmetic_Barrel_Right_Shifter>.
+
+Elaborating module <Combinational_32x32_Multiplier>.
+
+Elaborating module <twos_complement_64>.
+
+Elaborating module <branch>.
+
+Elaborating module <blk_mem_gen_v7_3b>.
+WARNING:HDLCompiler:1499 - "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\blk_mem_gen_v7_3b.v" Line 46: Empty module <blk_mem_gen_v7_3b> remains a black box.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <KGP_RISC>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\KGP_RISC.v".
+    Found 32-bit adder for signal <ROMAddr_Extended> created at line 86.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <KGP_RISC> synthesized.
+
+Synthesizing Unit <InstrFetch>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\InstrFetch.v".
+    Found 8-bit register for signal <pc>.
+    Found 1-bit register for signal <flag>.
+    Found 8-bit adder for signal <npc> created at line 50.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <InstrFetch> synthesized.
+
+Synthesizing Unit <InstDecode>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\InstDecode.v".
+    Found 4-bit 5-to-1 multiplexer for signal <fcode> created at line 32.
+    Summary:
+	inferred  13 Multiplexer(s).
+Unit <InstDecode> synthesized.
+
+Synthesizing Unit <writeAddress>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\writeAddress.v".
+    Summary:
+	inferred  13 Multiplexer(s).
+Unit <writeAddress> synthesized.
+
+Synthesizing Unit <regBank>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\regBank.v".
+    Found 1024-bit register for signal <n0047[1023:0]>.
+    Found 32-bit 32-to-1 multiplexer for signal <rdDataB> created at line 37.
+    Found 32-bit 32-to-1 multiplexer for signal <rdDataA> created at line 44.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  33 Multiplexer(s).
+Unit <regBank> synthesized.
+
+Synthesizing Unit <assignInputs>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\assignInputs.v".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <assignInputs> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\ALU.v".
+    Found 32-bit register for signal <mag2>.
+    Found 32-bit register for signal <ALUout>.
+    Found 32-bit register for signal <ALU_extout>.
+    Found 1-bit register for signal <zeroFlag>.
+    Found 1-bit register for signal <signFlag>.
+    Found 1-bit register for signal <overflowFlag>.
+    Found 1-bit register for signal <carryFlag>.
+    Found 32-bit register for signal <mag1>.
+    Found 32-bit 10-to-1 multiplexer for signal <fcode[3]_GND_8_o_wide_mux_21_OUT> created at line 62.
+    Found 1-bit 10-to-1 multiplexer for signal <fcode[3]_zeroFlag_Mux_23_o> created at line 62.
+    Found 1-bit 10-to-1 multiplexer for signal <fcode[3]_signFlag_Mux_24_o> created at line 62.
+    Summary:
+	inferred 132 D-type flip-flop(s).
+	inferred  13 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <twos_complement>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\twos_complement.v".
+INFO:Xst:3210 - "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\twos_complement.v" line 15: Output port <cout> of the instance <HA1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <twos_complement> synthesized.
+
+Synthesizing Unit <hybrid_adder>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\hybrid_adder.v".
+    Summary:
+	no macro.
+Unit <hybrid_adder> synthesized.
+
+Synthesizing Unit <four_bit_CLA_adder>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\hybrid_adder.v".
+    Found 1-bit adder for signal <C<1>> created at line 35.
+    Found 1-bit adder for signal <n0052> created at line 36.
+    Found 1-bit adder for signal <C<2>> created at line 36.
+    Found 1-bit adder for signal <n0058> created at line 37.
+    Found 1-bit adder for signal <n0061> created at line 37.
+    Found 1-bit adder for signal <C<3>> created at line 37.
+    Found 1-bit adder for signal <n0067> created at line 38.
+    Found 1-bit adder for signal <n0070> created at line 38.
+    Found 1-bit adder for signal <n0073> created at line 38.
+    Found 1-bit adder for signal <cout> created at line 38.
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+Unit <four_bit_CLA_adder> synthesized.
+
+Synthesizing Unit <Barrel_Shifter>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\Barrel_Shifter.v".
+    Summary:
+	inferred   5 Multiplexer(s).
+Unit <Barrel_Shifter> synthesized.
+
+Synthesizing Unit <MUX_2x1>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\MUX_2x1.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX_2x1> synthesized.
+
+Synthesizing Unit <Arithmetic_Barrel_Right_Shifter>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\Arithmetic_Barrel_Right_Shifter.v".
+    Summary:
+	no macro.
+Unit <Arithmetic_Barrel_Right_Shifter> synthesized.
+
+Synthesizing Unit <Combinational_32x32_Multiplier>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\Combinational_32x32_Multiplier.v".
+        size = 32
+    Found 64-bit adder for signal <p<127:64>> created at line 24.
+    Found 64-bit adder for signal <p<191:128>> created at line 24.
+    Found 64-bit adder for signal <p<255:192>> created at line 24.
+    Found 64-bit adder for signal <p<319:256>> created at line 24.
+    Found 64-bit adder for signal <p<383:320>> created at line 24.
+    Found 64-bit adder for signal <p<447:384>> created at line 24.
+    Found 64-bit adder for signal <p<511:448>> created at line 24.
+    Found 64-bit adder for signal <p<575:512>> created at line 24.
+    Found 64-bit adder for signal <p<639:576>> created at line 24.
+    Found 64-bit adder for signal <p<703:640>> created at line 24.
+    Found 64-bit adder for signal <p<767:704>> created at line 24.
+    Found 64-bit adder for signal <p<831:768>> created at line 24.
+    Found 64-bit adder for signal <p<895:832>> created at line 24.
+    Found 64-bit adder for signal <p<959:896>> created at line 24.
+    Found 64-bit adder for signal <p<1023:960>> created at line 24.
+    Found 64-bit adder for signal <p<1087:1024>> created at line 24.
+    Found 64-bit adder for signal <p<1151:1088>> created at line 24.
+    Found 64-bit adder for signal <p<1215:1152>> created at line 24.
+    Found 64-bit adder for signal <p<1279:1216>> created at line 24.
+    Found 64-bit adder for signal <p<1343:1280>> created at line 24.
+    Found 64-bit adder for signal <p<1407:1344>> created at line 24.
+    Found 64-bit adder for signal <p<1471:1408>> created at line 24.
+    Found 64-bit adder for signal <p<1535:1472>> created at line 24.
+    Found 64-bit adder for signal <p<1599:1536>> created at line 24.
+    Found 64-bit adder for signal <p<1663:1600>> created at line 24.
+    Found 64-bit adder for signal <p<1727:1664>> created at line 24.
+    Found 64-bit adder for signal <p<1791:1728>> created at line 24.
+    Found 64-bit adder for signal <p<1855:1792>> created at line 24.
+    Found 64-bit adder for signal <p<1919:1856>> created at line 24.
+    Found 64-bit adder for signal <p<1983:1920>> created at line 24.
+    Found 64-bit adder for signal <p<2047:1984>> created at line 24.
+    Summary:
+	inferred  31 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <Combinational_32x32_Multiplier> synthesized.
+
+Synthesizing Unit <twos_complement_64>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\twos_complement_64.v".
+    Found 64-bit adder for signal <out> created at line 15.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <twos_complement_64> synthesized.
+
+Synthesizing Unit <branch>.
+    Related source file is "D:\My Study Folder\3rd Year\Sem 5\COA\Lab\Assignment 10\KGP_RISC\ipcore_dir\branch.v".
+    Found 1-bit 13-to-1 multiplexer for signal <fcode[3]_GND_17_o_Mux_16_o> created at line 35.
+    Found 8-bit 13-to-1 multiplexer for signal <fcode[3]_GND_17_o_wide_mux_17_OUT> created at line 35.
+    Summary:
+	inferred  12 Multiplexer(s).
+Unit <branch> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 305
+ 1-bit adder                                           : 240
+ 32-bit adder                                          : 1
+ 64-bit adder                                          : 63
+ 8-bit adder                                           : 1
+# Registers                                            : 11
+ 1-bit register                                        : 5
+ 1024-bit register                                     : 1
+ 32-bit register                                       : 4
+ 8-bit register                                        : 1
+# Multiplexers                                         : 178
+ 1-bit 10-to-1 multiplexer                             : 2
+ 1-bit 13-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 9
+ 22-bit 2-to-1 multiplexer                             : 4
+ 25-bit 2-to-1 multiplexer                             : 1
+ 32-bit 10-to-1 multiplexer                            : 1
+ 32-bit 2-to-1 multiplexer                             : 70
+ 32-bit 32-to-1 multiplexer                            : 2
+ 4-bit 5-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 12
+ 64-bit 2-to-1 multiplexer                             : 65
+ 8-bit 13-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 9
+# Xors                                                 : 51
+ 1-bit xor2                                            : 1
+ 1-bit xor4                                            : 1
+ 32-bit xor2                                           : 1
+ 4-bit xor2                                            : 48
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <blk_mem_gen_v7_3b.ngc>.
+Reading core <blk_mem_gen_v7_3.ngc>.
+Loading core <blk_mem_gen_v7_3b> for timing and area information for instance <ROM>.
+Loading core <blk_mem_gen_v7_3> for timing and area information for instance <blk_ram>.
+
+Synthesizing (advanced) Unit <InstrFetch>.
+The following registers are absorbed into counter <pc>: 1 register on signal <pc>.
+Unit <InstrFetch> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 208
+ 1-bit adder                                           : 48
+ 1-bit adder carry in                                  : 96
+ 64-bit adder                                          : 63
+ 8-bit adder                                           : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 1157
+ Flip-Flops                                            : 1157
+# Multiplexers                                         : 239
+ 1-bit 10-to-1 multiplexer                             : 2
+ 1-bit 13-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 9
+ 1-bit 32-to-1 multiplexer                             : 64
+ 22-bit 2-to-1 multiplexer                             : 4
+ 25-bit 2-to-1 multiplexer                             : 1
+ 32-bit 10-to-1 multiplexer                            : 1
+ 32-bit 2-to-1 multiplexer                             : 70
+ 4-bit 5-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 12
+ 64-bit 2-to-1 multiplexer                             : 65
+ 8-bit 13-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 8
+# Xors                                                 : 51
+ 1-bit xor2                                            : 1
+ 1-bit xor4                                            : 1
+ 32-bit xor2                                           : 1
+ 4-bit xor2                                            : 48
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <KGP_RISC> ...
+
+Optimizing unit <InstrFetch> ...
+
+Optimizing unit <regBank> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <twos_complement> ...
+
+Optimizing unit <four_bit_CLA_adder> ...
+
+Optimizing unit <twos_complement_64> ...
+
+Optimizing unit <branch> ...
+
+Optimizing unit <assignInputs> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block KGP_RISC, actual ratio is 16.
+FlipFlop IF/flag has been replicated 4 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1169
+ Flip-Flops                                            : 1169
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : KGP_RISC.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 12866
+#      GND                         : 3
+#      INV                         : 64
+#      LUT1                        : 29
+#      LUT2                        : 1024
+#      LUT3                        : 2959
+#      LUT4                        : 1994
+#      LUT5                        : 981
+#      LUT6                        : 1592
+#      MUXCY                       : 2064
+#      MUXF7                       : 87
+#      VCC                         : 3
+#      XORCY                       : 2066
+# FlipFlops/Latches                : 1169
+#      FD_1                        : 100
+#      FDCE                        : 1037
+#      FDR_1                       : 32
+# RAMS                             : 32
+#      RAMB18E1                    : 32
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 18
+#      IBUF                        : 2
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1169  out of  126800     0%  
+ Number of Slice LUTs:                 8643  out of  63400    13%  
+    Number used as Logic:              8643  out of  63400    13%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   9702
+   Number with an unused Flip Flop:    8533  out of   9702    87%  
+   Number with an unused LUT:          1059  out of   9702    10%  
+   Number of fully used LUT-FF pairs:   110  out of   9702     1%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    210     8%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               16  out of    135    11%  
+    Number using Block RAM only:         16
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | IBUF+BUFG              | 1201  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 63.998ns (Maximum Frequency: 15.625MHz)
+   Minimum input arrival time before clock: 1.221ns
+   Maximum output required time after clock: 0.654ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 63.998ns (frequency: 15.625MHz)
+  Total number of paths / destination ports: 113874495704343050000000000 / 2548
+-------------------------------------------------------------------------
+Delay:               31.999ns (Levels of Logic = 95)
+  Source:            IF/blk_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram (RAM)
+  Destination:       alu/zeroFlag (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk falling
+
+  Data Path: IF/blk_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram to alu/zeroFlag
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOADO1    3   1.846   0.521  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram (douta<19>)
+     end scope: 'IF/blk_ram:douta<19>'
+     LUT4:I1->O          256   0.097   0.520  ID/Mmux_rtAddr11 (rtAddr<0>)
+     LUT6:I4->O            1   0.097   0.556  RB/mux32_10 (RB/mux32_10)
+     LUT6:I2->O            1   0.097   0.000  RB/mux32_2_f7_G (N301)
+     MUXF7:I1->O           7   0.279   0.407  RB/mux32_2_f7 (rtData<0>)
+     LUT6:I4->O            2   0.097   0.515  alu/Mult_32x32_unsigned/Mmux_n0162111 (alu/Mult_32x32_unsigned/n0162<1>)
+     LUT3:I0->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<191:128>1 (alu/Mult_32x32_unsigned/Madd_p<191:128>1)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_lut<0>2 (alu/Mult_32x32_unsigned/Madd_p<191:128>_lut<0>2)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_1 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>2)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_2 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>3)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_3 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>4)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_4 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>5)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_5 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>6)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_6 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>7)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_7 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>8)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_8 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>9)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_9 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>10)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_10 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>11)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_11 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>12)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_12 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>13)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_13 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>14)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_14 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>15)
+     MUXCY:CI->O           1   0.023   0.000  alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>_15 (alu/Mult_32x32_unsigned/Madd_p<191:128>_cy<0>16)
+     XORCY:CI->O           2   0.370   0.383  alu/Mult_32x32_unsigned/Madd_p<191:128>_xor<0>_16 (alu/Mult_32x32_unsigned/p<145>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<319:256>17 (alu/Mult_32x32_unsigned/Madd_p<319:256>17)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<319:256>_lut<0>18 (alu/Mult_32x32_unsigned/Madd_p<319:256>_lut<0>18)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<319:256>_cy<0>_17 (alu/Mult_32x32_unsigned/Madd_p<319:256>_cy<0>18)
+     XORCY:CI->O           2   0.370   0.383  alu/Mult_32x32_unsigned/Madd_p<319:256>_xor<0>_18 (alu/Mult_32x32_unsigned/p<275>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<447:384>19 (alu/Mult_32x32_unsigned/Madd_p<447:384>19)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<447:384>_lut<0>20 (alu/Mult_32x32_unsigned/Madd_p<447:384>_lut<0>20)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<447:384>_cy<0>_19 (alu/Mult_32x32_unsigned/Madd_p<447:384>_cy<0>20)
+     XORCY:CI->O           2   0.370   0.383  alu/Mult_32x32_unsigned/Madd_p<447:384>_xor<0>_20 (alu/Mult_32x32_unsigned/p<405>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<575:512>21 (alu/Mult_32x32_unsigned/Madd_p<575:512>21)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<575:512>_lut<0>22 (alu/Mult_32x32_unsigned/Madd_p<575:512>_lut<0>22)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<575:512>_cy<0>_21 (alu/Mult_32x32_unsigned/Madd_p<575:512>_cy<0>22)
+     XORCY:CI->O           2   0.370   0.383  alu/Mult_32x32_unsigned/Madd_p<575:512>_xor<0>_22 (alu/Mult_32x32_unsigned/p<535>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<703:640>23 (alu/Mult_32x32_unsigned/Madd_p<703:640>23)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<703:640>_lut<0>24 (alu/Mult_32x32_unsigned/Madd_p<703:640>_lut<0>24)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<703:640>_cy<0>_23 (alu/Mult_32x32_unsigned/Madd_p<703:640>_cy<0>24)
+     XORCY:CI->O           2   0.370   0.383  alu/Mult_32x32_unsigned/Madd_p<703:640>_xor<0>_24 (alu/Mult_32x32_unsigned/p<665>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<831:768>25 (alu/Mult_32x32_unsigned/Madd_p<831:768>25)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<831:768>_lut<0>26 (alu/Mult_32x32_unsigned/Madd_p<831:768>_lut<0>26)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<831:768>_cy<0>_25 (alu/Mult_32x32_unsigned/Madd_p<831:768>_cy<0>26)
+     XORCY:CI->O           2   0.370   0.383  alu/Mult_32x32_unsigned/Madd_p<831:768>_xor<0>_26 (alu/Mult_32x32_unsigned/p<795>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<959:896>27 (alu/Mult_32x32_unsigned/Madd_p<959:896>27)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<959:896>_lut<0>28 (alu/Mult_32x32_unsigned/Madd_p<959:896>_lut<0>28)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<959:896>_cy<0>_27 (alu/Mult_32x32_unsigned/Madd_p<959:896>_cy<0>28)
+     XORCY:CI->O           2   0.370   0.384  alu/Mult_32x32_unsigned/Madd_p<959:896>_xor<0>_28 (alu/Mult_32x32_unsigned/p<925>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<1087:1024>29 (alu/Mult_32x32_unsigned/Madd_p<1087:1024>29)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<1087:1024>_lut<0>30 (alu/Mult_32x32_unsigned/Madd_p<1087:1024>_lut<0>30)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<1087:1024>_cy<0>_29 (alu/Mult_32x32_unsigned/Madd_p<1087:1024>_cy<0>30)
+     XORCY:CI->O           2   0.370   0.384  alu/Mult_32x32_unsigned/Madd_p<1087:1024>_xor<0>_30 (alu/Mult_32x32_unsigned/p<1055>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<1215:1152>31 (alu/Mult_32x32_unsigned/Madd_p<1215:1152>31)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<1215:1152>_lut<0>32 (alu/Mult_32x32_unsigned/Madd_p<1215:1152>_lut<0>32)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<1215:1152>_cy<0>_31 (alu/Mult_32x32_unsigned/Madd_p<1215:1152>_cy<0>32)
+     XORCY:CI->O           2   0.370   0.384  alu/Mult_32x32_unsigned/Madd_p<1215:1152>_xor<0>_32 (alu/Mult_32x32_unsigned/p<1185>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<1343:1280>33 (alu/Mult_32x32_unsigned/Madd_p<1343:1280>33)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<1343:1280>_lut<0>34 (alu/Mult_32x32_unsigned/Madd_p<1343:1280>_lut<0>34)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<1343:1280>_cy<0>_33 (alu/Mult_32x32_unsigned/Madd_p<1343:1280>_cy<0>34)
+     XORCY:CI->O           2   0.370   0.384  alu/Mult_32x32_unsigned/Madd_p<1343:1280>_xor<0>_34 (alu/Mult_32x32_unsigned/p<1315>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<1471:1408>35 (alu/Mult_32x32_unsigned/Madd_p<1471:1408>35)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<1471:1408>_lut<0>36 (alu/Mult_32x32_unsigned/Madd_p<1471:1408>_lut<0>36)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<1471:1408>_cy<0>_35 (alu/Mult_32x32_unsigned/Madd_p<1471:1408>_cy<0>36)
+     XORCY:CI->O           2   0.370   0.384  alu/Mult_32x32_unsigned/Madd_p<1471:1408>_xor<0>_36 (alu/Mult_32x32_unsigned/p<1445>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<1599:1536>37 (alu/Mult_32x32_unsigned/Madd_p<1599:1536>37)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<1599:1536>_lut<0>38 (alu/Mult_32x32_unsigned/Madd_p<1599:1536>_lut<0>38)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<1599:1536>_cy<0>_37 (alu/Mult_32x32_unsigned/Madd_p<1599:1536>_cy<0>38)
+     XORCY:CI->O           2   0.370   0.384  alu/Mult_32x32_unsigned/Madd_p<1599:1536>_xor<0>_38 (alu/Mult_32x32_unsigned/p<1575>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<1727:1664>39 (alu/Mult_32x32_unsigned/Madd_p<1727:1664>39)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<1727:1664>_lut<0>40 (alu/Mult_32x32_unsigned/Madd_p<1727:1664>_lut<0>40)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<1727:1664>_cy<0>_39 (alu/Mult_32x32_unsigned/Madd_p<1727:1664>_cy<0>40)
+     XORCY:CI->O           2   0.370   0.384  alu/Mult_32x32_unsigned/Madd_p<1727:1664>_xor<0>_40 (alu/Mult_32x32_unsigned/p<1705>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<1855:1792>41 (alu/Mult_32x32_unsigned/Madd_p<1855:1792>41)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<1855:1792>_lut<0>42 (alu/Mult_32x32_unsigned/Madd_p<1855:1792>_lut<0>42)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<1855:1792>_cy<0>_41 (alu/Mult_32x32_unsigned/Madd_p<1855:1792>_cy<0>42)
+     XORCY:CI->O           2   0.370   0.384  alu/Mult_32x32_unsigned/Madd_p<1855:1792>_xor<0>_42 (alu/Mult_32x32_unsigned/p<1835>)
+     LUT3:I1->O            1   0.097   0.295  alu/Mult_32x32_unsigned/Madd_p<1983:1920>43 (alu/Mult_32x32_unsigned/Madd_p<1983:1920>43)
+     LUT4:I3->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<1983:1920>_lut<0>44 (alu/Mult_32x32_unsigned/Madd_p<1983:1920>_lut<0>44)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<1983:1920>_cy<0>_43 (alu/Mult_32x32_unsigned/Madd_p<1983:1920>_cy<0>44)
+     XORCY:CI->O           1   0.370   0.295  alu/Mult_32x32_unsigned/Madd_p<1983:1920>_xor<0>_44 (alu/Mult_32x32_unsigned/p<1965>)
+     LUT6:I5->O            1   0.097   0.000  alu/Mult_32x32_unsigned/Madd_p<2047:1984>_lut<45> (alu/Mult_32x32_unsigned/Madd_p<2047:1984>_lut<45>)
+     MUXCY:S->O            1   0.353   0.000  alu/Mult_32x32_unsigned/Madd_p<2047:1984>_cy<45> (alu/Mult_32x32_unsigned/Madd_p<2047:1984>_cy<45>)
+     XORCY:CI->O           2   0.370   0.688  alu/Mult_32x32_unsigned/Madd_p<2047:1984>_xor<46> (alu/p_unsigned<46>)
+     LUT6:I1->O            1   0.097   0.000  alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_lut<1> (alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_lut<1>)
+     MUXCY:S->O            1   0.353   0.000  alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<1> (alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<2> (alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<3> (alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<4> (alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<5> (alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<6> (alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<7> (alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<8> (alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<9> (alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<9>)
+     MUXCY:CI->O           1   0.253   0.295  alu/p_unsigned[63]_GND_8_o_equal_21_o<63>_wg_cy<10> (alu/p_unsigned[63]_GND_8_o_equal_21_o)
+     LUT6:I5->O            1   0.097   0.000  alu/opcode[2]_fcode[3]_Select_42_o3 (alu/opcode[2]_fcode[3]_Select_42_o)
+     FD_1:D                    0.008          alu/zeroFlag
+    ----------------------------------------
+    Total                     31.999ns (18.402ns logic, 13.597ns route)
+                                       (57.5% logic, 42.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1050 / 1050
+-------------------------------------------------------------------------
+Offset:              1.221ns (Levels of Logic = 2)
+  Source:            clk (PAD)
+  Destination:       IF/pc_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: clk to IF/pc_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.001   0.716  clk_IBUF (clk_IBUF)
+     LUT6:I0->O            8   0.097   0.311  IF/_n0034_inv (IF/_n0034_inv)
+     FDCE:CE                   0.095          IF/pc_0
+    ----------------------------------------
+    Total                      1.221ns (0.193ns logic, 1.028ns route)
+                                       (15.8% logic, 84.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              0.654ns (Levels of Logic = 1)
+  Source:            RB/r_0_239 (FF)
+  Destination:       routa<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: RB/r_0_239 to routa<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.361   0.293  RB/r_0_239 (RB/r_0_239)
+     OBUF:I->O                 0.000          routa_15_OBUF (routa<15>)
+    ----------------------------------------
+    Total                      0.654ns (0.361ns logic, 0.293ns route)
+                                       (55.2% logic, 44.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.948|    3.787|   31.999|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 73.00 secs
+Total CPU time to Xst completion: 73.27 secs
+ 
+--> 
+
+Total memory usage is 4671968 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

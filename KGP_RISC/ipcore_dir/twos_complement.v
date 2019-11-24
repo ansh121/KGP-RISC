@@ -1,0 +1,17 @@
+`timescale 1ns / 1ps
+
+//////////////////////////////////////////////////////////////////////////////////
+// Name - Anshul Choudhary / Ayush Kumar
+// Roll No. - 17CS10005 / 17CS10007
+// Grp. No. - 47
+//////////////////////////////////////////////////////////////////////////////////
+
+module twos_complement(
+    input [31:0] inp1,
+    output [31:0] out
+    );
+	 
+	 wire c;
+	 hybrid_adder HA1(~inp1,32'd1,out,c);
+
+endmodule

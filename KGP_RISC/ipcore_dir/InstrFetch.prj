@@ -1,0 +1,6 @@
+verilog work "PC_incrementor.v"
+verilog work "PC.v"
+verilog work "MUX_2x1.v"
+verilog work "IF_ID.v"
+verilog work "blk_mem_gen_v7_3.v"
+verilog work "InstrFetch.v"

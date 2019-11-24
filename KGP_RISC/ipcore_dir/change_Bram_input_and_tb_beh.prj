@@ -1,0 +1,4 @@
+verilog work "blk_mem_gen_v7_3.v"
+verilog work "../Change_BRam.v"
+verilog work "../change_Bram_input_and_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

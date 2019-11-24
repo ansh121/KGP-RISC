@@ -1,0 +1,58 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/KGP_RISC_tb_isim_beh.exe -prj D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/KGP_RISC_tb_beh.prj work.KGP_RISC_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/MUX_2x1.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/hybrid_adder.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/twos_complement_64.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/twos_complement.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/Combinational_32x32_Multiplier.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/blk_mem_gen_v7_3.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/Barrel_Shifter.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/Arithmetic_Barrel_Right_Shifter.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/writeAddress.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/regBank.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/InstrFetch.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/InstDecode.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/branch.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/blk_mem_gen_v7_3b.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/assignInputs.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/ALU.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/KGP_RISC.v" into library work
+Analyzing Verilog file "D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/../KGP_RISC_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="artix...
+Compiling module blk_mem_gen_v7_3
+Compiling module InstrFetch
+Compiling module InstDecode
+Compiling module writeAddress
+Compiling module regBank
+Compiling module assignInputs
+Compiling module four_bit_CLA_adder
+Compiling module hybrid_adder
+Compiling module twos_complement
+Compiling module MUX_2x1
+Compiling module Barrel_Shifter
+Compiling module Arithmetic_Barrel_Right_Shifter
+Compiling module Combinational_32x32_Multiplier_d...
+Compiling module twos_complement_64
+Compiling module ALU
+Compiling module branch
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="artix...
+Compiling module blk_mem_gen_v7_3b
+Compiling module KGP_RISC
+Compiling module KGP_RISC_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 26 Verilog Units
+Built simulation executable D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/KGP_RISC_tb_isim_beh.exe
+Fuse Memory Usage: 33736 KB
+Fuse CPU Usage: 999 ms

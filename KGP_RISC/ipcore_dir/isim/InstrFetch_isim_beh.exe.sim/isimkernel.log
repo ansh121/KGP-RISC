@@ -1,0 +1,29 @@
+Command line:
+   InstrFetch_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50509
+
+Fri Nov 08 15:10:50 2019
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5159.95 Meg
+
+ Total Signals          : 168
+ Total Nets             : 748
+ Total Signal Drivers   : 70
+ Total Blocks           : 19
+ Total Primitive Blocks : 15
+ Total Processes        : 84
+ Total Traceable Variables  : 338
+ Total Scalar Nets and Variables : 28159
+Total Line Count : 434
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 5002.66 Meg
+
+Fri Nov 08 15:12:22 2019
+

@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml KGP_RISC.twx KGP_RISC.ncd -o KGP_RISC.twr KGP_RISC.pcf
+-ucf KGP_RISC_ucf.ucf
+
+Design file:              KGP_RISC.ncd
+Physical constraint file: KGP_RISC.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+reset       |    0.913(R)|      FAST  |    2.088(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+routa<0>    |         9.895(R)|      SLOW  |         3.939(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<1>    |         9.941(R)|      SLOW  |         3.947(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<2>    |        10.895(R)|      SLOW  |         4.453(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<3>    |         9.825(R)|      SLOW  |         3.914(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<4>    |         9.723(R)|      SLOW  |         3.823(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<5>    |        10.163(R)|      SLOW  |         4.086(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<6>    |         9.853(R)|      SLOW  |         3.919(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<7>    |        10.369(R)|      SLOW  |         4.170(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<8>    |        10.005(R)|      SLOW  |         4.011(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<9>    |         9.994(R)|      SLOW  |         3.988(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<10>   |         9.792(R)|      SLOW  |         3.868(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<11>   |         9.675(R)|      SLOW  |         3.805(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<12>   |         9.671(R)|      SLOW  |         3.786(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<13>   |        10.047(R)|      SLOW  |         3.996(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<14>   |         9.918(R)|      SLOW  |         3.919(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+routa<15>   |         9.728(R)|      SLOW  |         3.837(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    9.905|    7.649|   41.476|   47.510|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Nov 13 02:01:23 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5051 MB
+
+
+

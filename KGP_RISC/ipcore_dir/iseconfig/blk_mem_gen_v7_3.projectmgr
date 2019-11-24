@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="blk_mem_gen_v7_3" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALU D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|ALU.v</ClosedNode>
+         <ClosedNode>/Change_BRam D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|Change_BRam.v</ClosedNode>
+         <ClosedNode>/KGP_RISC D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|KGP_RISC.v/IF - InstrFetch</ClosedNode>
+         <ClosedNode>/KGP_RISC D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|KGP_RISC.v/IF - InstrFetch/blk_ram - blk_mem_gen_v7_3</ClosedNode>
+         <ClosedNode>/KGP_RISC D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|KGP_RISC.v/alu - ALU</ClosedNode>
+         <ClosedNode>/KGP_RISC D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|KGP_RISC.v/alu - ALU/ABRS - Arithmetic_Barrel_Right_Shifter</ClosedNode>
+         <ClosedNode>/KGP_RISC D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|KGP_RISC.v/alu - ALU/BSL - Barrel_Shifter</ClosedNode>
+         <ClosedNode>/KGP_RISC D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|KGP_RISC.v/alu - ALU/C2 - twos_complement/HA1 - hybrid_adder</ClosedNode>
+         <ClosedNode>/temporary_module D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|temporary_module.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>IF - InstrFetch (D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/InstrFetch.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017a0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>IF - InstrFetch (D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/ipcore_dir/InstrFetch.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_NGC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000134000000010000000100000000000000000000000064ffffffff000000810000000000000001000001340000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002d2000000040101000100000000000000000000000064ffffffff0000008100000000000000040000008800000001000000000000004800000001000000000000005d0000000100000000000001a50000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>blk_mem_gen_v7_3.ngc</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000157000000010000000100000000000000000000000064ffffffff000000810000000000000001000001570000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000134000000010000000100000000000000000000000064ffffffff000000810000000000000001000001340000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALU_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ALU_tb.v</ClosedNode>
+         <ClosedNode>/ALU_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|ALU_tb.v</ClosedNode>
+         <ClosedNode>/InstDecode_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|InstDecode_tb.v</ClosedNode>
+         <ClosedNode>/InstrDecode_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|InstrDecode_tb.v</ClosedNode>
+         <ClosedNode>/InstrFetch_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|InstrFetch_tb.v</ClosedNode>
+         <ClosedNode>/InstrFetch_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|InstrFetch_tb.v</ClosedNode>
+         <ClosedNode>/InstrFetch_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|InstrFetch_tb.v/uut - InstrFetch</ClosedNode>
+         <ClosedNode>/KGP_RISC D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|KGP_RISC.v/IF - InstrFetch</ClosedNode>
+         <ClosedNode>/KGP_RISC D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|KGP_RISC.v/ROM - blk_mem_gen_v7_3b</ClosedNode>
+         <ClosedNode>/KGP_RISC D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|KGP_RISC.v/alu - ALU</ClosedNode>
+         <ClosedNode>/KGP_RISC_32out_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|KGP_RISC_32out_tb.v</ClosedNode>
+         <ClosedNode>/KGP_RISC_32out_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|KGP_RISC_32out_tb.v/uut - KGP_RISC/IF - InstrFetch</ClosedNode>
+         <ClosedNode>/KGP_RISC_32out_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|KGP_RISC_32out_tb.v/uut - KGP_RISC/ROM - blk_mem_gen_v7_3b</ClosedNode>
+         <ClosedNode>/KGP_RISC_32out_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|KGP_RISC_32out_tb.v/uut - KGP_RISC/alu - ALU</ClosedNode>
+         <ClosedNode>/KGP_RISC_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|KGP_RISC_tb.v</ClosedNode>
+         <ClosedNode>/KGP_RISC_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/IF - InstrFetch</ClosedNode>
+         <ClosedNode>/KGP_RISC_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/ROM - blk_mem_gen_v7_3b</ClosedNode>
+         <ClosedNode>/KGP_RISC_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/alu - ALU</ClosedNode>
+         <ClosedNode>/KGP_RISC_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|KGP_RISC_tb.v/uut - KGP_RISC/blk_mem - blk_mem_gen_v7_3b</ClosedNode>
+         <ClosedNode>/KGP_RISC_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|KGP_RISC_tb.v/uut - KGP_RISC/IF - InstrFetch</ClosedNode>
+         <ClosedNode>/KGP_RISC_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|KGP_RISC_tb.v/uut - KGP_RISC/ROM - blk_mem_gen_v7_3b</ClosedNode>
+         <ClosedNode>/KGP_RISC_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|KGP_RISC_tb.v/uut - KGP_RISC/alu - ALU</ClosedNode>
+         <ClosedNode>/KGP_RISC_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|KGP_RISC_tb.v/uut - KGP_RISC/blk_mem - blk_mem_gen_v7_3b</ClosedNode>
+         <ClosedNode>/alu_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|alu_tb.v</ClosedNode>
+         <ClosedNode>/assignInputs_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|assignInputs_tb.v</ClosedNode>
+         <ClosedNode>/assignInputs_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|assignInputs_tb.v</ClosedNode>
+         <ClosedNode>/branch_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|branch_tb.v</ClosedNode>
+         <ClosedNode>/branch_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|branch_tb.v</ClosedNode>
+         <ClosedNode>/change_Bram_input_and_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|change_Bram_input_and_tb.v</ClosedNode>
+         <ClosedNode>/complement_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|complement_tb.v</ClosedNode>
+         <ClosedNode>/get_nth_instr_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|get_nth_instr_tb.v</ClosedNode>
+         <ClosedNode>/ha_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|ha_tb.v</ClosedNode>
+         <ClosedNode>/regBank_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|regBank_tb.v</ClosedNode>
+         <ClosedNode>/regBank_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|regBank_tb.v</ClosedNode>
+         <ClosedNode>/temporary_module D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|temporary_module.v</ClosedNode>
+         <ClosedNode>/writeAddress_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|ipcore_dir|writeAddress_tb.v</ClosedNode>
+         <ClosedNode>/writeAddress_tb D:|My Study Folder|3rd Year|Sem 5|COA|Lab|Assignment 10|KGP_RISC|writeAddress_tb.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>KGP_RISC_tb (D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/KGP_RISC_tb.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000100000000020000000000000000000000000200000064ffffffff000000810000000300000002000001000000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>KGP_RISC_tb (D:/My Study Folder/3rd Year/Sem 5/COA/Lab/Assignment 10/KGP_RISC/KGP_RISC_tb.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000157000000010000000100000000000000000000000064ffffffff000000810000000000000001000001570000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000134000000010000000100000000000000000000000064ffffffff000000810000000000000001000001340000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff000000000000000200000118000000bf01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000134000000010000000100000000000000000000000064ffffffff000000810000000000000001000001340000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

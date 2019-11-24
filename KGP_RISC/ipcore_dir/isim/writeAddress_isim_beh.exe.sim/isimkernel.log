@@ -1,0 +1,29 @@
+Command line:
+   writeAddress_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50521
+
+Fri Nov 08 15:12:47 2019
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 5160.45 Meg
+
+ Total Signals          : 21
+ Total Nets             : 228
+ Total Signal Drivers   : 9
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 378
+Total Line Count : 59
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 5003.16 Meg
+
+Fri Nov 08 15:15:12 2019
+
