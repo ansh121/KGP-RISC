@@ -5,7 +5,7 @@
 Module  | Description
 ------------- | -------------
 **KGP_RISC.v**   | Top module to control all other modules.
-**ALU.v**  | Module to perform arithmetic operations only. <br><br>Modules used under ALU.v are : <br>Arithmetic_Barrel_Right_Shifter.v, <br>Barrel_Shifter.v, <br>hybrid_adder.v, <br>MUX_2x1.v, <br>twos_complement.v, <br>twos_complement_64.v, <br>Combinational_32x32_Multiplier.v
+**ALU.v**  | Module to perform arithmetic operations only. <br><br>Modules used under ALU.v are : <br> 1) Arithmetic_Barrel_Right_Shifter.v, <br>2) Barrel_Shifter.v, <br>3) hybrid_adder.v, <br>4) MUX_2x1.v, <br>5) twos_complement.v, <br>6) twos_complement_64.v, <br>7) Combinational_32x32_Multiplier.v
 **branch.v** | Perform all the logical operations for branching instructions.
 **assignInputs.v** | Module provides modified and appropriate sign extended input to ALU module depending upon OPCODE and FCODE.
 **InstDecode.v** | This module decodes 32-bit instruction input to generate opcode, fcode, rs, rt, imm, shamt, etc. 
